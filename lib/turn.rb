@@ -50,4 +50,3 @@ def turn (board)
   move (board, index, current_players = "X")
   display_board (board)
 end
-
