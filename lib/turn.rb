@@ -50,4 +50,4 @@ end
     move (board, index, current_players = "X")
     display_board (board)
   end
-end 
+end
