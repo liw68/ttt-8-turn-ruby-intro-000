@@ -46,7 +46,7 @@ def turn (board)
   input_to_index (input)
   until valid_move?(board, index) == true
     puts "Please enter 1-9:"
-  move (board, index)
+  move (board, index, current_players = "X")
   display_board (board)  
   end
 end
