@@ -46,7 +46,7 @@ end
     index = input_to_index (input)
       while valid_move?(board, index) == false
         turn (board)
-      else 
+      else
         move (board, index, current_players = "X")
         display_board (board)
       end
