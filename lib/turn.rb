@@ -47,7 +47,6 @@ end
       while valid_move?(board, index) == false
         turn (board)
       end  
-          move (board, index, current_players = "X")
-          display_board (board)
-      end
-  end
+    move (board, index, current_players = "X")
+    display_board (board)
+    end
