@@ -17,6 +17,7 @@ def turn (board)
   input = gets.strip
   input_to_index (input)
   valid_move?(board, index)
+  on_board
 end
 
 def move (board, index, current_player = "X")
