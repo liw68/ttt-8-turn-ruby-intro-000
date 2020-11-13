@@ -44,9 +44,10 @@ end
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index (input)
-      until valid_move?(board, index) == true
+      while valid_move?(board, index) == false
         turn (board)
+      else 
+        move (board, index, current_players = "X")
+        display_board (board)
       end
-    move (board, index, current_players = "X")
-    display_board (board)
   end
