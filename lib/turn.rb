@@ -48,6 +48,6 @@ end
       move (board, index, current_players = "X")
       display_board (board)
     else
-      turn (board)  
+      turn (board)
     end
   end
