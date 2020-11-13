@@ -12,25 +12,22 @@ def input_to_index (input)
   input.to_i - 1
 end
 
-def turn (board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  input_to_index (input)
-  def valid_move?(board, index)
-    def position_taken?(board, index)
-      if board[index] == " " || board[index] == "" || board[index] == nil
-          return false
-        elsif board[index] == "X" || board[index] == "O"
-          return true
-      end
-  end
-  def on_board
-    if int.between?(0,8) == true
-      return true
-    else
-      return false
+def valid_move?(board, index)
+  def position_taken?(board, index)
+    if board[index] == " " || board[index] == "" || board[index] == nil
+        return false
+    elsif board[index] == "X" || board[index] == "O"
+        return true
     end
+end
+
+def on_board
+  if int.between?(0,8) == true
+    return true
+  else
+    return false
   end
+end
 
     if position_taken?(board, index) == false && index.between?(0,8) == true
       return true
