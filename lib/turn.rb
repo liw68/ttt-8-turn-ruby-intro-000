@@ -21,13 +21,13 @@ def valid_move?(board, index)
     end
 end
 
-def on_board
-  if int.between?(0,8) == true
-    return true
-  else
-    return false
+  def on_board
+    if int.between?(0,8) == true
+      return true
+    else
+      return false
+    end
   end
-end
 
   if position_taken?(board, index) == false && index.between?(0,8) == true
     return true
